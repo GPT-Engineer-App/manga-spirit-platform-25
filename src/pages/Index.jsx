@@ -2,7 +2,7 @@ import { Box, Button, Container, Flex, Heading, Icon, Image, SimpleGrid, Stack, 
 import { FaHeart, FaUpload, FaUserFriends, FaPlus } from "react-icons/fa";
 
 const Index = () => {
-  const bgColor = useColorModeValue("gray.50", "gray.900");
+  const bgColor = useColorModeValue("purple.50", "purple.900");
   const textColor = useColorModeValue("gray.600", "gray.200");
   const buttonColorScheme = "teal";
 
@@ -10,7 +10,7 @@ const Index = () => {
     <Container maxW="container.xl" p={4}>
       <VStack spacing={10}>
         {/* Hero Section */}
-        <Flex direction="column" alignItems="center" justifyContent="center" minH="60vh" textAlign="center">
+        <Flex direction="column" alignItems="center" justifyContent="center" minH="60vh" textAlign="center" bgImage="url('https://example.com/manga-style-background.png')" bgSize="cover" bgRepeat="no-repeat">
           <Heading as="h1" size="2xl" fontWeight="bold" bgGradient="linear(to-l, #7928CA, #FF0080)" bgClip="text">
             Unleash Your Manga Spirit
           </Heading>
@@ -18,7 +18,7 @@ const Index = () => {
             Explore the ultimate platform for manga fans and creators alike.
           </Text>
           <Stack direction="row" spacing={4} mt={10}>
-            <Button colorScheme={buttonColorScheme} leftIcon={<FaUserFriends />} aria-label="Join as a Fan">
+            <Button colorScheme={buttonColorScheme} leftIcon={<FaUserFriends />} aria-label="Join as a Fan" _hover={{ transform: "translateY(-2px)", boxShadow: "lg" }}>
               Join as Fan
             </Button>
             <Button colorScheme={buttonColorScheme} leftIcon={<FaUpload />} aria-label="Join as a Creator">
