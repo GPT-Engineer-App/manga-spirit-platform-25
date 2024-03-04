@@ -16,7 +16,12 @@ const StickyHeader = () => {
       <Box display={{ base: "none", md: "block" }} width={{ base: "full", md: "auto" }} alignItems="center" flexGrow={1}>
         {}
       </Box>
-      <Box>{}</Box>
+      <Box>
+        <Link to="/onboarding">Onboarding</Link>
+        <Link to="/customize-merch">Customize Merch</Link>
+        {}
+        <div>EN | ES | JP</div>
+      </Box>
     </Flex>
   );
 };
