@@ -18,10 +18,10 @@ const Index = () => {
             Explore the ultimate platform for manga fans and creators alike.
           </Text>
           <Stack direction="row" spacing={4} mt={10}>
-            <Button colorScheme={buttonColorScheme} leftIcon={<FaUserFriends />}>
+            <Button colorScheme={buttonColorScheme} leftIcon={<FaUserFriends />} aria-label="Join as a Fan">
               Join as Fan
             </Button>
-            <Button colorScheme={buttonColorScheme} leftIcon={<FaUpload />}>
+            <Button colorScheme={buttonColorScheme} leftIcon={<FaUpload />} aria-label="Join as a Creator">
               Join as Creator
             </Button>
           </Stack>
@@ -40,7 +40,7 @@ const Index = () => {
                 <Text fontWeight="semibold">Favorites Section</Text>
               </Flex>
               <Text color={textColor}>Keep all your beloved manga series in one place for quick access.</Text>
-              <Button colorScheme={buttonColorScheme} size="sm">
+              <Button colorScheme={buttonColorScheme} size="sm" aria-label="Follow New Manga">
                 Follow New Manga
               </Button>
             </VStack>
@@ -57,7 +57,7 @@ const Index = () => {
                 <Text fontWeight="semibold">My Uploads</Text>
               </Flex>
               <Text color={textColor}>Showcase your work and get insightful analytics.</Text>
-              <Button colorScheme={buttonColorScheme} size="sm">
+              <Button colorScheme={buttonColorScheme} size="sm" aria-label="Upload New Work">
                 Upload New Work
               </Button>
             </VStack>
@@ -70,14 +70,14 @@ const Index = () => {
             <Heading size="lg">Ready to dive into the world of manga?</Heading>
             <Text color={textColor}>Whether you're a fan or a creator, join us today and be part of the MangaVerse!</Text>
           </VStack>
-          <Button colorScheme={buttonColorScheme} size="lg" mt={{ base: 4, md: 0 }} leftIcon={<FaPlus />}>
+          <Button colorScheme={buttonColorScheme} size="lg" mt={{ base: 4, md: 0 }} leftIcon={<FaPlus />} aria-label="Get Started with MangaVerse">
             Get Started
           </Button>
         </Flex>
 
         {/* Footer Image */}
         <Box>
-          <Image src="https://images.unsplash.com/photo-1560972550-aba3456b5564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxtYW5nYSUyMGFydHxlbnwwfHx8fDE3MDk1OTQ4Njl8MA&ixlib=rb-4.0.3&q=80&w=1080" borderRadius="lg" boxShadow="xl" />
+          <Image src="https://images.unsplash.com/photo-1560972550-aba3456b5564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxtYW5nYSUyMGFydHxlbnwwfHx8fDE3MDk1OTQ4Njl8MA&ixlib=rb-4.0.3&q=80&w=1080" borderRadius="lg" boxShadow="xl" alt="Manga artwork" />
         </Box>
       </VStack>
     </Container>
