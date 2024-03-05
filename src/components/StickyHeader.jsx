@@ -17,8 +17,12 @@ const StickyHeader = () => {
         {}
       </Box>
       <Box>
-        <Link to="/onboarding">Onboarding</Link>
-        <Link to="/customize-merch">Customize Merch</Link>
+        <Link to="/onboarding" _hover={{ textDecoration: "underline" }}>
+          Onboarding
+        </Link>
+        <Link to="/customize-merch" _hover={{ textDecoration: "underline" }}>
+          Customize Merch
+        </Link>
         {}
         <div>EN | ES | JP</div>
       </Box>

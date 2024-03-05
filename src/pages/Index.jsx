@@ -11,7 +11,7 @@ const Index = () => {
         {}
 
         {}
-        <Box bg={bgColor} p={6} borderRadius="lg" boxShadow="md" my={8}>
+        <Box bg={bgColor} p={6} borderRadius="lg" boxShadow="md" my={8} _hover={{ boxShadow: "xl" }}>
           <Heading size="lg" mb={4}>
             AI Previews
           </Heading>

@@ -6,7 +6,7 @@ function CustomizeMerch() {
       <Text>Customize your merchandise!</Text>
       {}
       {}
-      <Button>Proceed to Payment</Button>
+      <Button _hover={{ bg: "teal.600" }}>Proceed to Payment</Button>
     </Box>
   );
 }
